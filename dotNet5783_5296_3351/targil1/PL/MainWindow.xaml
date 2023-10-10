@@ -1,0 +1,56 @@
+﻿<Window x:Class="PL.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PL"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="640" Width="800">
+
+    <Grid   Style="{StaticResource backgroundImage}">
+
+
+        <Button Foreground="White" Content="Manager" Margin="41,269,571,289"  Click="ManagerButton_Click" RenderTransformOrigin="0.508,0.509" FontSize="24" BorderBrush="#FF150606"  >
+            <Button.Resources>
+                <Style  TargetType="Border">
+                    <Setter Property="CornerRadius" Value="125"/>
+                </Style>
+            </Button.Resources>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+        <Button Foreground="White" Content="Client" Margin="308,271,304,287"  Click="client_Click" RenderTransformOrigin="0.5,0.5" FontSize="24" BorderBrush="#FF150606"  >
+            <Button.Resources >
+                <Style  TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="125"/>
+                </Style>
+            </Button.Resources>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Foreground="White" Content="Start Progress" Margin="151,443,461,115"  Click="StartProgress_Click" RenderTransformOrigin="0.508,0.509" FontSize="24" BorderBrush="#FF150606"  >
+            <Button.Resources>
+                <Style  TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </Button.Resources>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+
+</Window>
